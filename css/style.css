@@ -187,6 +187,9 @@ body {
     top: 25px;
 }
 
+.advantages {
+    margin-bottom: 236px;
+}
 
 .advantages__inner {
     display: flex;
