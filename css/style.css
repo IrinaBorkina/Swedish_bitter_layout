@@ -233,3 +233,232 @@ body {
     line-height: 24px;
     letter-spacing: 0.1px;
 }
+
+.list__title {
+    font-weight: 700;
+    color: #303030;
+    font-size: 40px;
+    line-height: 50px;
+    max-width: 470px;
+    margin-bottom: 40px;
+}
+
+.tabs__content {
+    background: url(../images/list-images.jpg) no-repeat top center;
+    background-size: cover;
+    min-width: 500px;
+    height: 689px;
+    position: relative;
+    margin-top: -178px;
+}
+
+.list__inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f9f3;
+}
+
+.tabs {
+    padding-right: 16px;
+    width: 100%;
+}
+
+.tab {
+    padding: 27px 40px 23px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    color: #303030;
+    border-bottom: 1px solid #e6efde;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.tab.active {
+    position: relative;
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    right: 25px;
+    background-image: url(../images/chevron.svg);
+    width: 8px;
+    height: 13px;
+}
+
+.tab span {
+    color: #a4c58c;
+    margin-right: 17px;
+}
+
+.tab-item {
+    display: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    width: 43px;
+    height: 43px;
+    border: 9px solid rgba(255, 255, 255, .8);
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    line-height: 25px;
+}
+
+.tab-item:first-child {
+    display: block;
+}
+
+.item-1 {
+    left: 150px;
+    top: 182px;
+}
+
+.item-2 {
+    left: 200px;
+    top: 182px;
+}
+
+.item-3 {
+    left: 180px;
+    top: 130px;
+}
+
+.item-4 {
+    left: 230px;
+    top: 150px;
+}
+
+.item-5 {
+    left: 230px;
+    top: 40px;
+}
+
+.item-6 {
+    left: 200px;
+    top: 300px;
+}
+
+.item-7 {
+    left: 300px;
+    top: 200px;
+}
+
+.item-8 {
+    left: 230px;
+    top: 210px;
+}
+
+.item-9 {
+    left: 240px;
+    top: 170px;
+}
+
+.tabs__box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabs__box .tab {
+    padding-top: 21px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+}
+
+.tabs__box .tab span {
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.tabs__box .tab:first-child,
+.tabs__box .tab:nth-child(3) {
+    border-right: 1px solid #e6efde;
+    padding-right: 10px;
+    padding-left: 0px;
+    width: 54%;
+}
+
+.tabs__box .tab:last-child,
+.tabs__box .tab:nth-child(2) {
+    padding-left: 37px;
+    padding-right: 10px;
+    width: 46%;
+}
+
+.tabs__box .tab.active::after {
+    display: none;
+}
+
+.tabs__reviews {
+    padding: 20px;
+    background-color: #f6f9f3;
+    max-width: 417px;
+    position: absolute;
+    bottom: -22px;
+}
+
+.tabs__reviews-inner {
+    border: 1px solid #c5dab5;
+    padding: 33px 20px 33px 48px;
+}
+
+.tabs__reviews-text {
+    color: #303030;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.tabs__reviews-link {
+    color: #7eb152;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0 8px 1px 8px;
+    position: absolute;
+    background-color: #f6f9f3;
+    margin-top: 26px;
+    left: 55px;
+    letter-spacing: 0.1px;
+}
+
+.list__link {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.list__link a {
+    margin-top: 20px;
+    padding: 28px 100px 28px 123px;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 0.9px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #7eb252;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-width: 500px;
+    position: relative;
+}
+
+.list__link a::after {
+    content: '';
+    background-image: url(../images/arrow-right.png);
+    width: 31px;
+    height: 9px;
+    position: absolute;
+    right: 100px;
+    top: 30px;
+}
