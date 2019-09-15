@@ -661,3 +661,39 @@ body {
 
 
 
+.quote {
+    min-height: 620px;
+    background: url(../images/quotebg-left.png) no-repeat left center;
+    background-size: auto;
+}
+
+.quote__wrapper {
+    min-height: 620px;
+    padding: 150px 0px 100px;
+    background: url(../images/quotebg-right.png) no-repeat right center;
+    background-size: auto;
+}
+
+.quote__inner {
+    max-width: 770px;
+    padding: 50px 0;
+    border-top: 1px solid #a4c58c;
+    border-bottom: 1px solid #a4c58c;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.author {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.author span {
+    font-size: 16px;
+    color: #9a9a9a;
+}
