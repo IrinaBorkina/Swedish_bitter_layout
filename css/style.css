@@ -7,12 +7,20 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #303030;
 }
 
 .container {
     max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    max-width: 1720px;
     margin: 0 auto;
 }
 
@@ -27,7 +35,6 @@ body {
     margin-right: auto;
     margin-left: 30px;
     color: #9a9a9a;
-    font-size: 16px;
 }
 
 .header__phone {
@@ -61,7 +68,7 @@ body {
 }
 
 .top {
-    margin-bottom: 78px;
+    margin-bottom: 82px;
 }
 
 .top__images {
@@ -91,8 +98,8 @@ body {
 }
 
 .top__inner-suptitle {
-    margin-top: 81px;
-    margin-bottom: 15px;
+    margin-top: 75px;
+    margin-bottom: 29px;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
@@ -102,7 +109,7 @@ body {
 
 .top__inner-title {
     font-size: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 57px;
     font-weight: 600;
     color: #ffffff;
 }
@@ -110,7 +117,6 @@ body {
 .top__inner-text {
     margin-bottom: 95px;
     font-size: 18px;
-    line-height: 24px;
     color: #ffffff;
     padding-right: 55px;
 }
@@ -132,7 +138,6 @@ body {
 .top-form__title {
     font-weight: 700;
     font-size: 14px;
-    color: #303030;
     line-height: 22px;
     letter-spacing: 0.7px;
     margin-bottom: 26px;
@@ -165,6 +170,9 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+.form__btn {
     padding: 22px 107px 22px 75px;
     border: none;
     outline: none;
@@ -175,16 +183,17 @@ body {
     background-color: #7eb252;
     cursor: pointer;
     text-transform: uppercase;
+    position: relative;
 }
 
-.top-form button::after {
+.form__btn::after {
     content: '';
     background-image: url(../images/arrow-right.png);
     width: 31px;
     height: 9px;
     position: absolute;
     right: 60px;
-    top: 25px;
+    top: 25px;    
 }
 
 .advantages {
@@ -230,13 +239,11 @@ body {
 .advantage__item-text {
     padding-top: 24px;
     font-size: 16px;
-    line-height: 24px;
     letter-spacing: 0.1px;
 }
 
 .list__title {
     font-weight: 700;
-    color: #303030;
     font-size: 40px;
     line-height: 50px;
     max-width: 470px;
@@ -271,7 +278,6 @@ body {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.8px;
-    color: #303030;
     border-bottom: 1px solid #e6efde;
     text-transform: uppercase;
     cursor: pointer;
@@ -413,9 +419,6 @@ body {
 }
 
 .tabs__reviews-text {
-    color: #303030;
-    font-size: 16px;
-    line-height: 24px;
     letter-spacing: 0.1px;
 }
 
@@ -426,7 +429,7 @@ body {
     padding: 0 8px 1px 8px;
     position: absolute;
     background-color: #f6f9f3;
-    margin-top: 26px;
+    margin-top: 20px;
     left: 55px;
     letter-spacing: 0.1px;
 }
@@ -439,7 +442,7 @@ body {
 
 .list__link a {
     margin-top: 20px;
-    padding: 28px 100px 28px 123px;
+    padding: 24px 100px 24px 123px;
     outline: none;
     font-size: 14px;
     letter-spacing: 0.9px;
@@ -469,9 +472,7 @@ body {
 }
 
 .popularity__wrapper {
-    max-width: 1720px;
     min-height: 645px;
-    margin: 0 auto;
     background: url(../images/popularity.jpg) no-repeat;
 }
 
@@ -490,13 +491,11 @@ body {
     font-weight: 700;
     line-height: 50px;
     font-size: 40px;
-    color: #303030;
     margin-top: 40px;
 }
 
 .popularity__right-subtitle {
     padding: 45px 0 58px;
-    color: #303030;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -0.5px;
@@ -508,8 +507,6 @@ body {
 }
 
 .popularity__right-reasons li {
-    color: #303030;
-    line-height: 24px;
     padding-left: 40px;
     margin-bottom: 43px;
     position: relative;
@@ -527,22 +524,20 @@ body {
 }
 
 .popularity__box {
-    padding: 20px 20px 0px;
+    padding: 22px 20px 0px;
     background: #fff;
-    margin-bottom: -2px;
+    margin-bottom: 5px;
 }
 
 .popularity__box-text {
     border: 1px solid #c5dab5;
     padding: 34px 43px 35px 38px;
-    color: #303030;
     margin-right: 70px;
-    line-height: 24px;
     letter-spacing: 0.3px;
 }
 
 .popularity__box-link {
-    padding: 28px 87px 29px 42px;
+    padding: 22px 87px 23px 42px;
     outline: none;
     font-size: 14px;
     letter-spacing: 0.6px;
@@ -563,4 +558,80 @@ body {
     position: absolute;
     right: 40px;
     top: 30px;
+}
+
+
+
+.history {
+    padding-top: 264px;
+    margin-bottom: 200px;
+}
+
+.history-wrapper {
+    background: url(../images/alonso.jpg) no-repeat right center;
+    min-height: 920px;
+}
+
+.history__title {
+    padding: 90px 0px 45px;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    max-width: 570px;
+}
+
+.history__text {
+    background-color: #f6f9f3;
+    padding: 37px 30px 43px 0;
+    max-width: 700px;
+    position: relative;
+}
+
+.history__text::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 275px;
+    background-color: #f6f9f3;
+    right: 100%;
+    top: 0;
+}
+
+.history__text p {
+    margin: 15px 0;
+}
+
+.history__form {
+    max-width: 400px;
+    padding-left: 30px;
+    margin-left: 200px;
+}
+
+.history__form-title {
+    margin: 43px 0 30px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.9px;
+    font-weight: 700;
+    padding-right: 30px;
+    text-transform: uppercase;
+}
+
+.history__form input {
+    border: none;
+    outline: none;
+    height: 34px;
+    border-bottom: 1px solid #cddcbc;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+}
+
+.history__form input::placeholder {
+    color: #a8c48c;
+}
+
+.history__form button {
+    width: 100%;
+    margin-top: 34px;
 }
