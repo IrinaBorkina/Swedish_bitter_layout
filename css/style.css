@@ -22,6 +22,7 @@ body {
 .container-fluid {
     max-width: 1720px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .header__inner {
@@ -197,7 +198,7 @@ body {
 }
 
 .advantages {
-    margin-bottom: 236px;
+    margin-bottom: 191px;
 }
 
 .advantages__inner {
@@ -242,12 +243,15 @@ body {
     letter-spacing: 0.1px;
 }
 
+
+
 .list__title {
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
     max-width: 470px;
     margin-bottom: 40px;
+    margin-top: 45px;
 }
 
 .tabs__content {
@@ -263,6 +267,26 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #f6f9f3;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.list__inner::before,
+.list__inner::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    background: #f6f9f3;
+}
+
+.list__inner::before {
+    right: 100%;
+}
+
+.list__inner::after {
+    left: 100%;
 }
 
 .tabs {
@@ -437,7 +461,6 @@ body {
 .list__link {
     display: flex;
     justify-content: flex-end;
-    margin-top: 30px;
 }
 
 .list__link a {
@@ -591,7 +614,7 @@ body {
     content: "";
     position: absolute;
     height: 100%;
-    width: 275px;
+    width: 100%;
     background-color: #f6f9f3;
     right: 100%;
     top: 0;
@@ -635,3 +658,6 @@ body {
     width: 100%;
     margin-top: 34px;
 }
+
+
+
