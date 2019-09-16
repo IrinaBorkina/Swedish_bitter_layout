@@ -587,7 +587,6 @@ body {
 
 .history {
     padding-top: 264px;
-    margin-bottom: 50px;
 }
 
 .history-wrapper {
@@ -680,10 +679,10 @@ body {
     border-top: 1px solid #a4c58c;
     border-bottom: 1px solid #a4c58c;
     text-align: center;
-    margin: 0 auto;
     font-size: 24px;
     line-height: 40px;
     font-weight: 700;
+    margin: 50px auto 0;
 }
 
 .author {
